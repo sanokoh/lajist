@@ -26,6 +26,7 @@
 		<ul class="nav-links">
 			<li><a href="#message">企業挨拶</a></li>
 			<li><a href="#business">事業内容</a></li>
+			<li><a href="#strength">私たちの強み</a></li>
 			<li><a href="#company">会社概要</a></li>
 		</ul>
 		<div class="hamburger" onclick="toggleMenu()">
@@ -37,36 +38,35 @@
 	<div class="mobile-menu" id="mobileMenu">
 		<a href="#message" onclick="toggleMenu()">企業挨拶</a>
 		<a href="#business" onclick="toggleMenu()">事業内容</a>
+		<a href="#strength" onclick="toggleMenu()">私たちの強み</a>
 		<a href="#company" onclick="toggleMenu()">会社概要</a>
 	</div>
 
 	<!-- HERO -->
 	<section class="hero">
-		<div class="hero-bg"></div>
-		<div class="hero-organic"></div>
+		<div class="hero-video-wrap">
+			<video autoplay muted loop playsinline>
+				<source src="/assets/video/lajist_mv.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="hero-overlay"></div>
 		<div class="hero-content">
-			<div class="hero-text">
-				<p class="hero-en">Challenge from Zero to One</p>
-				<h1 class="hero-title">
-					温故知新の精神で<br><em>ゼロから1へ</em>の挑戦
-				</h1>
-				<p class="hero-desc">
-					不動産、建築、コンサルティング——<br>
-					多角的な事業を通じて、<br>
-					皆様の暮らしとビジネスに価値をお届けします。
-				</p>
-				<div class="hero-cta">
-					<a href="#business" class="btn btn-primary">事業内容を見る <span class="btn-arrow">→</span></a>
-					<a href="#company" class="btn btn-outline">会社概要</a>
-				</div>
+			<p class="hero-en">Challenge from Zero to One</p>
+			<h1 class="hero-title">
+				温故知新の精神で<br><em>ゼロから1へ</em>の挑戦
+			</h1>
+			<p class="hero-desc">
+				不動産、建築、コンサルティング——<br>
+				多角的な事業を通じて、<br>
+				皆様の暮らしとビジネスに価値をお届けします。
+			</p>
+			<div class="hero-cta">
+				<a href="#business" class="btn btn-primary">事業内容を見る <span class="btn-arrow">→</span></a>
+				<a href="#company" class="btn btn-outline-light">会社概要</a>
 			</div>
-			<div class="hero-visual">
-				<div class="hero-img-frame">
-					<div class="hero-img-placeholder">
-						<img src="/assets/images/mv.png" alt="Modern Japanese corporate office building exterior with clean architectural lines, warm lighting at dusk, professional and welcoming atmosphere">
-					</div>
-				</div>
-				<div class="hero-img-accent"></div>
+			<div class="hero-scroll">
+				<span>Scroll</span>
+				<div class="hero-scroll-line"></div>
 			</div>
 		</div>
 	</section>
@@ -105,52 +105,39 @@
 				<div class="section-line"></div>
 			</div>
 
-			<!-- メイン事業 -->
-			<div class="business-main reveal">
-				<div class="business-category-label">Main Business</div>
-
-				<div class="business-card business-card--primary">
-					<div class="business-card-icon">
-						<svg viewBox="0 0 24 24">
-							<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-							<polyline points="9 22 9 12 15 12 15 22" />
-						</svg>
-					</div>
-					<div class="business-card-body">
-						<h3>不動産の売買、賃貸の仲介業務</h3>
-						<p>お客様のご要望に合った物件のご紹介から契約まで、不動産の売買・賃貸に関する仲介業務を幅広く対応いたします。</p>
-					</div>
+			<div class="business-list">
+				<div class="business-card reveal">
 					<div class="business-card-img">
 						<img src="/assets/images/business-realestate.png" alt="Modern Japanese residential property exterior, clean and bright real estate listing photo style, beautiful house with well-maintained garden">
 					</div>
-				</div>
-
-				<div class="business-sub-list reveal">
-					<div class="business-sub-item">
-						<span class="business-sub-dash">―</span>
-						<div>
-							<h4>不動産の受託販売業務</h4>
-							<p>オーナー様からお預かりした物件の販売を、最適な戦略でサポートいたします。</p>
+					<div class="business-card-content">
+						<div class="business-card-icon">
+							<svg viewBox="0 0 24 24">
+								<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+								<polyline points="9 22 9 12 15 12 15 22" />
+							</svg>
 						</div>
-					</div>
-					<div class="business-sub-item">
-						<span class="business-sub-dash">―</span>
-						<div>
-							<h4>不動産の管理業務</h4>
-							<p>物件の維持管理、入居者対応、収支管理まで、安心のトータルサポートを提供します。</p>
-						</div>
+						<h3>不動産の売買、賃貸の仲介業務</h3>
+						<p>お客様のご要望に合った物件のご紹介から契約まで、不動産の売買・賃貸に関する仲介業務を幅広く対応いたします。</p>
+						<ul class="business-detail-list">
+							<li>不動産の受託販売業務</li>
+							<li>不動産の管理業務</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="business-card business-card--primary reveal">
-					<div class="business-card-icon">
-						<svg viewBox="0 0 24 24">
-							<rect x="1" y="6" width="22" height="16" rx="2" />
-							<path d="M1 10h22" />
-							<path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-						</svg>
+				<div class="business-card reveal">
+					<div class="business-card-img">
+						<img src="/assets/images/carport.png" alt="Japanese construction site showing beautiful exterior and interior renovation work, professional craftsmanship, tiling and plastering details, warm natural lighting">
 					</div>
-					<div class="business-card-body">
+					<div class="business-card-content">
+						<div class="business-card-icon">
+							<svg viewBox="0 0 24 24">
+								<rect x="1" y="6" width="22" height="16" rx="2" />
+								<path d="M1 10h22" />
+								<path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+							</svg>
+						</div>
 						<h3>建築業</h3>
 						<p>外構・内装・左官・タイル・クリーニングなど、建築に関わる多岐にわたる施工を自社で一貫対応いたします。</p>
 						<div class="business-tags">
@@ -161,35 +148,55 @@
 							<span class="business-tag">クリーニング</span>
 						</div>
 					</div>
-					<div class="business-card-img">
-						<img src="/assets/images/carport.png" alt="Japanese construction site showing beautiful exterior and interior renovation work, professional craftsmanship, tiling and plastering details, warm natural lighting">
-					</div>
 				</div>
-			</div>
 
-			<!-- サブ事業 -->
-			<div class="business-sub reveal">
-				<div class="business-category-label">Sub Business</div>
-
-				<div class="business-card business-card--secondary">
-					<div class="business-card-icon">
-						<svg viewBox="0 0 24 24">
-							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-							<circle cx="9" cy="7" r="4" />
-							<path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-							<path d="M16 3.13a4 4 0 0 1 0 7.75" />
-						</svg>
-					</div>
-					<div class="business-card-body">
-						<h3>コンサルティング業務・営業代行</h3>
-						<p>事業戦略の立案から営業活動の代行まで、お客様のビジネス成長を多角的にサポートいたします。</p>
-					</div>
+				<div class="business-card reveal">
 					<div class="business-card-img">
 						<img src="/assets/images/business-consulting.png" alt="Professional Japanese business meeting in modern office, consultants discussing strategy with clients, clean minimalist conference room with natural light">
 					</div>
+					<div class="business-card-content">
+						<div class="business-card-icon">
+							<svg viewBox="0 0 24 24">
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+								<circle cx="9" cy="7" r="4" />
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+								<path d="M16 3.13a4 4 0 0 1 0 7.75" />
+							</svg>
+						</div>
+						<h3>コンサルティング業務・営業代行</h3>
+						<p>事業戦略の立案から営業活動の代行まで、お客様のビジネス成長を多角的にサポートいたします。</p>
+					</div>
 				</div>
 			</div>
 
+		</div>
+	</section>
+
+	<!-- STRENGTH / 私たちの強み -->
+	<section id="strength">
+		<div class="section-inner">
+			<div class="section-header reveal">
+				<div class="section-en">Strength</div>
+				<div class="section-jp">私たちの強み</div>
+				<div class="section-line"></div>
+			</div>
+			<div class="strength-grid">
+				<div class="strength-item reveal">
+					<div class="strength-number">01</div>
+					<h3>多角的な事業展開</h3>
+					<p>不動産・建築・コンサルティングの3つの柱で、お客様の多様なニーズにワンストップで対応。複合的な課題にも一貫したサポートを提供します。</p>
+				</div>
+				<div class="strength-item reveal">
+					<div class="strength-number">02</div>
+					<h3>地域密着の信頼</h3>
+					<p>東京都日野市を拠点に、地域の特性を熟知した提案力で、お客様一人ひとりに寄り添ったきめ細やかなサービスを実現します。</p>
+				</div>
+				<div class="strength-item reveal">
+					<div class="strength-number">03</div>
+					<h3>挑戦し続ける姿勢</h3>
+					<p>「温故知新」の精神のもと、伝統的な価値観を大切にしながらも、新しい手法や技術を積極的に取り入れ、常に進化し続けます。</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
