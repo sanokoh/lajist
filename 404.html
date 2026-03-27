@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ページが見つかりません | 株式会社ラジスト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-num {
+            font-family: var(--font-en);
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 400;
+            color: var(--olive);
+            line-height: 1;
+            opacity: 0.25;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+        .error-title {
+            font-family: var(--font-jp-serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 1rem;
+            letter-spacing: 0.06em;
+        }
+        .error-desc {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            line-height: 2;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">
+            <span class="logo-main">ラジスト</span>
+            <span class="logo-sub">Rajist Co., Ltd.</span>
+        </a>
+    </nav>
+
+    <div class="error-page">
+        <div>
+            <div class="error-num">404</div>
+            <h1 class="error-title">ページが見つかりません</h1>
+            <p class="error-desc">
+                お探しのページは移動または削除された可能性があります。<br>
+                URLをご確認の上、トップページからお探しください。
+            </p>
+            <a href="/" class="btn btn-primary">トップページへ戻る <span class="btn-arrow">→</span></a>
+        </div>
+    </div>
+</body>
+</html>

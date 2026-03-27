@@ -1,0 +1,82 @@
+# ============================================================
+# .htaccess - 株式会社ラジスト
+# ============================================================
+
+# ===== HTTPS リダイレクト =====
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # HTTP → HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # www → non-www
+    RewriteCond %{HTTP_HOST} ^www\.lajist\.co\.jp [NC]
+    RewriteRule ^ https://lajist.co.jp%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ===== 文字コード =====
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js
+
+# ===== カスタム 404 =====
+ErrorDocument 404 /404.html
+
+# ===== Gzip 圧縮 =====
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# ===== ブラウザキャッシュ =====
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML はキャッシュしない（常に最新を取得）
+    ExpiresByType text/html                 "access plus 0 seconds"
+
+    # CSS・JS は 1 年間キャッシュ
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+
+    # 画像は 1 年間キャッシュ
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/gif                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType image/x-icon              "access plus 1 year"
+
+    # フォント
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+</IfModule>
+
+# ===== セキュリティヘッダー =====
+<IfModule mod_headers.c>
+    # クリックジャッキング対策
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # MIME スニッフィング対策
+    Header always set X-Content-Type-Options "nosniff"
+
+    # リファラー制御
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # XSS 対策
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # HTTPS 強制（HSTS）※SSL 設定完了後に有効化推奨
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ===== ディレクトリ一覧を非表示 =====
+Options -Indexes
+
+# ===== 隠しファイルへのアクセス禁止 =====
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
