@@ -10,18 +10,20 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
+	<!-- SCROLL PROGRESS -->
+	<div class="scroll-progress" id="scrollProgress"></div>
+
 	<!-- NAVIGATION -->
 	<nav>
 		<a href="#" class="logo">
-			<span class="logo-main">ラジスト</span>
-			<span class="logo-sub">Lajist Co., Ltd.</span>
+			<img src="/assets/images/logo.png" alt="株式会社ラジスト" class="logo-img">
 		</a>
 		<ul class="nav-links">
 			<li><a href="#message">企業挨拶</a></li>
@@ -64,15 +66,11 @@
 				<a href="#business" class="btn btn-primary">事業内容を見る <span class="btn-arrow">→</span></a>
 				<a href="#company" class="btn btn-outline-light">会社概要</a>
 			</div>
-			<div class="hero-scroll">
-				<span>Scroll</span>
-				<div class="hero-scroll-line"></div>
-			</div>
 		</div>
 	</section>
 
 	<!-- MESSAGE / 企業挨拶 -->
-	<section id="message">
+	<section id="message" class="dark-section">
 		<div class="section-inner">
 			<div class="section-header reveal">
 				<div class="section-en">Message</div>
@@ -80,10 +78,10 @@
 				<div class="section-line"></div>
 			</div>
 			<div class="message-content">
-				<div class="message-img reveal">
+				<div class="message-img reveal reveal-left">
 					<img src="/assets/images/message.png" alt="Japanese business landscape at sunrise, symbolizing new beginnings and ambitious challenges, warm golden light over a modern cityscape with traditional elements">
 				</div>
-				<div class="message-text reveal">
+				<div class="message-text reveal reveal-right">
 					<blockquote class="message-quote">
 						<p>我々ラジストは</p>
 						<p><strong>温故知新</strong>をモットーに</p>
@@ -97,7 +95,7 @@
 	</section>
 
 	<!-- BUSINESS / 事業内容 -->
-	<section id="business">
+	<section id="business" class="light-section">
 		<div class="section-inner">
 			<div class="section-header reveal">
 				<div class="section-en">Business</div>
@@ -173,7 +171,7 @@
 	</section>
 
 	<!-- STRENGTH / 私たちの強み -->
-	<section id="strength">
+	<section id="strength" class="dark-section">
 		<div class="section-inner">
 			<div class="section-header reveal">
 				<div class="section-en">Strength</div>
@@ -201,7 +199,7 @@
 	</section>
 
 	<!-- COMPANY -->
-	<section id="company">
+	<section id="company" class="light-section">
 		<div class="section-inner">
 			<div class="section-header reveal">
 				<div class="section-en">Company</div>
@@ -237,7 +235,7 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="footer-logo">ラジスト</div>
+		<div class="footer-logo">株式会社ラジスト</div>
 		<div class="footer-logo-en">Lajist CO., LTD.</div>
 		<p class="footer-copy">&copy; 2025 Lajist Co., Ltd. All rights reserved.</p>
 	</footer>
