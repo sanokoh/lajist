@@ -74,14 +74,14 @@ nav.scrolled {
 }
 
 .logo-img {
-	height: 80px;
+	height: 46px;
 	width: auto;
 	transition: height 0.4s ease, filter 0.3s;
 	filter: brightness(0) invert(1);
 }
 
 nav.scrolled .logo-img {
-	height: 80px;
+	height: 46px;
 }
 
 .nav-links {
@@ -439,8 +439,7 @@ section {
 
 .message-quote {
 	position: relative;
-	padding: 2rem 2.5rem;
-	border-left: 2px solid var(--accent);
+	padding: 0;
 }
 
 .message-quote p {
@@ -930,11 +929,11 @@ footer {
 	}
 
 	.logo-img {
-		height: 54px;
+		height: 24px;
 	}
 
 	nav.scrolled .logo-img {
-		height: 54px;
+		height: 24px;
 	}
 
 	.nav-links {
@@ -954,7 +953,7 @@ footer {
 	}
 
 	.hero-title {
-		font-size: clamp(1.8rem, 6vw, 2.4rem);
+		font-size: clamp(1.5rem, 6vw, 2.4rem);
 	}
 
 	.hero-desc br {
