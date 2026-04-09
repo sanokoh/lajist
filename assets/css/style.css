@@ -967,7 +967,7 @@ footer {
 	}
 
 	.message-quote {
-		padding: 1.2rem 1.5rem;
+		padding:0;
 	}
 
 	.message-quote p {
