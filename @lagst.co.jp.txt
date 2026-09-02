@@ -1,0 +1,60 @@
+メールアドレス： aritake@lagst.co.jp
+パスワード：  =(7.#(knFhkB
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=aritake@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：eguchi@lagst.co.jp
+パスワード： Cv*n9fr,-a$J
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=eguchi@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：nagasawa_taiga@lagst.co.jp
+パスワード： n/5i#@U+FJNk
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=nagasawa_taiga@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：nakaizumi_yoshitaka@lagst.co.jp
+パスワード： SfGn8rmvj=p_
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=nakaizumi_yoshitaka@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：ohishi@lagst.co.jp
+パスワード： &-@-UAAwx+89kjf
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=ohishi@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：ohishi_nao@lagst.co.jp
+パスワード： (wK6LVpb#_$w
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=ohishi_nao@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：saito_shuuya@lagst.co.jp
+パスワード： 9XhfPHS_wFB9T3M
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=saito_shuuya@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：tsuda_seiichi@lagst.co.jp
+パスワード： dUT3jY*2P|zf
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=tsuda_seiichi@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+メールアドレス：info@lagst.co.jp
+パスワード： YLX-ak_L2mz,
+iPhoneのプロファイルインストール
+https://www2658.sakura.ne.jp/mailconfig/?email=info@lagst.co.jp&initdomain=naru-ya.sakura.ne.jp&type=imap
+
+
+
+メールソフト設定
+・SSL/TLS（暗号化あり）
+・表示名（氏名）：任意の文字列
+※メール送信時などに相手側に表示される名前
+・メールアドレス：作成したメールアドレス
+・メールパスワード：メールアドレス作成時のパスワード
+・受信サーバーの種類：IMAP4S
+・IMAPパス接頭辞：INBOX
+・受信サーバー/送信サーバー：naru-ya.sakura.ne.jp
+・受信ポート：993
+・送信ポート：587 または 465
+※SMTPS（SMTP over SSL）使用時は465も利用可。
+・アカウント名（ユーザーID）：メールアドレス
